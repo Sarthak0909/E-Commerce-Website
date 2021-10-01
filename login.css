@@ -1,0 +1,23 @@
+body{
+    background-color: #202020;
+    color: white;
+}
+.login .container {
+    width: 40%;
+}
+.login .btn-success {
+    width: 100%;
+    margin-top: 2%;
+}
+.login .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+.login .newUser {
+    text-align: center;
+}
+.login .createAcc {
+    color: green;
+}

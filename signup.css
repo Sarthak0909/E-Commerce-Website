@@ -1,0 +1,72 @@
+body{
+    background-color: #202020;
+    overflow: hidden;
+    font-size: 20px;
+}
+.col {
+    margin-left: 115px;
+}
+.logo {
+    width: 300px;
+    margin-left: 32.25%;
+    height: auto;
+    position: relative;
+    bottom: -10%;
+}
+.Welcome {
+    color: white;
+    font-weight: 500;
+    font-size: 150%;
+    font-family: Helvetica,sans-serif;
+    position: relative;
+    margin-left: 28.25%;
+    margin-top: 5%;
+    margin-bottom: -6%;
+}
+.sign-in {
+    color: white;
+    position: relative;
+    margin-left: 28.25%;
+    margin-top: 6.5%;
+    margin-bottom: -6%;
+    font-family: Helvetica,sans-serif;
+}
+.input {
+    width: 28%;
+    height: 46px;
+    position: relative;
+    margin-left: -0.35%;
+    bottom: -100px;
+}
+.NextBtn {
+    background-color: rgb(10, 145, 10);
+    color: white;
+    width: 32%;
+    height: 40px;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-family: UberMoveText-Medium,Helvetica,sans-serif;
+    position: relative;
+    bottom: -120px;
+    margin-left: 28%;
+}
+a{
+    text-decoration: none;
+}
+.create_acc {
+    color: white;
+    font-size: 90%;
+    position: relative;
+    margin-left: 28.25%;
+    bottom: -140px;
+}
+.codes {
+    width: 4%;
+    height: 46px;
+    position: relative;
+    margin-left: 28.25%;
+    bottom: -100px;
+}

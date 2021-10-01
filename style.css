@@ -1,0 +1,881 @@
+/*
+color used
+black
+red
+white
+blackish grey #202020
+*/
+*{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.nav{
+    background-color: #202020;
+    z-index: 9;
+    padding-left: 5%;
+    display: flex;
+    box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, 0.15);
+}
+.nav_top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.logo{
+    float: left;
+    width: 60%;
+}
+.logo img{
+    padding: 1%;
+}
+.nav_side{
+    float: right;
+    width: 40%;
+    margin-top: 1.5%;
+}
+.nav_side a{
+    text-decoration: none;
+    margin-right: 4%;
+    color: white;
+    font-weight: bold;
+    font-family: cosmic, sans-serif;
+    font-size: 75%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.nav_side a:hover{
+    color: red;
+    transition: all 1s ease;
+}
+.main{
+    background-image: url('image/Background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;
+}
+.main .main_content{
+    padding-top: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.main .main_content h2{
+    color: red;
+    font-size: 250%;
+    font-family: cosmic,sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 40px;
+}
+.main .main_content h2 span{
+    font-size: 30%;
+    opacity: 1;
+    color: white;
+    font-weight: 900;
+    line-height: 1%;
+}
+.main .main_content .btn{
+    margin-top: 5%;
+    text-align: center;
+}
+.main .main_content .btn a{
+    text-decoration: none;
+    margin: 5%;
+    padding: 10% 20%;
+    background-color: #202020;
+    color: white;
+    font-family: cosmic,sans-serif;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.main .main_content .btn a:hover{
+    background-color: black;
+    color: red;
+    border: none;
+    border-bottom: 4px solid red;
+    transition: 0.5s;
+}
+.product{
+    padding-bottom: 3% 3% 3% 3%;
+}
+.product h2{
+    color: red;
+    font-weight: 700;
+    font-size: 175%;
+    text-align: center;
+    padding: 2%;
+}
+.product .product_container{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.product .product_container .item{
+    width: 30%;
+    margin: auto;
+    height: 500px;
+    border-radius: 50px;
+}
+.product .product_container .item:hover{
+    box-shadow: 0px 3px 65px 0px rgba(255, 255, 255, 0.15);
+}
+.product .product_container .item .item_img{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    border-radius: 50px 50px 0px 0px;
+}
+.product .product_container .item .item_img img{
+    width: 100%;
+    height: 100%;
+}
+.product .product_container .item .item_content{
+    text-align: center;
+}
+.product .product_container .item .item_content h3{
+    color: white;
+    padding: 1%;
+    font-size: 125%;
+    font-family: cosmic,sans-serif;
+    font-weight: lighter;
+}
+.product .product_container .item .item_content p{
+    color: white;
+    padding: 1%;
+    font-size: 68%;
+    font-family: cosmic,sans-serif;
+}
+.product .product_container .item .item_content a{
+    text-decoration: none;
+    margin: 5%;
+    padding: 2.5% 5%;
+    background-color: #202020;
+    color: white;
+    font-family: cosmic,sans-serif;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.product .product_container .item .item_content a:hover{
+    background-color: black;
+    color: red;
+    border: none;
+    border-bottom: 4px solid red;
+    transition: 0.5s;
+}
+.product .product_btn{
+    text-align: center;
+    margin-top: 3.5%;
+    margin-bottom: 3.5%;
+}
+.product .product_btn a{
+    text-decoration: none;
+    padding: 1% 2%;
+    background-color: #202020;
+    color: white;
+    font-family: cosmic,sans-serif;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.product .product_btn a:hover{
+    background-color: black;
+    color: red;
+    border: none;
+    border-bottom: 4px solid red;
+    transition: 0.5s;
+}
+.keypoint{
+    padding: 1% 3% 1% 3%;
+}
+.keypoint h2{
+    color: red;
+    font-weight: 700;
+    font-size: 175%;
+    text-align: center;
+}
+.keypoint .key_container{
+    display: flex;
+}
+.keypoint .key_container .key_img{
+    width: 40%;
+    float: right;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-left: 2%;
+}
+.keypoint .key_container .key_img img{
+    width: 100%;
+}
+.keypoint .key_container .key_content{
+    width: 50%;
+    padding: 2%;
+    float: left;
+}
+.keypoint .key_container .key_content li{
+    list-style: none;
+    margin: 1%;
+    padding: 1%;
+    border-left: 2px solid red;
+    color: white;
+    text-align: left;
+    font-family: cosmic, sans-serif;
+    box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, 0.15);
+}
+.testi{
+    padding: 0% 3% 3% 3%;
+}
+.testi h2{
+    color: red;
+    font-weight: 700;
+    font-size: 175%;
+    text-align: center;
+    padding: 2%;
+    text-transform: uppercase;
+}
+.testi .testi_container{
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+}
+.testi .testi_container .carousel-inner{
+    background-color: white;
+}
+.testi .testi_container .item{
+    width: 100%;
+    padding: 0.5%;
+    background-color: #202020;
+}
+.testi .testi_container .item .item_img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.testi .testi_container .item .item_img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 5%;
+}
+.testi .testi_container .item .item_content{
+    text-align: center;
+}
+.testi .testi_container .item .item_content h3{
+    padding: 1%;
+    color: black;
+    font-size: 125%;
+    font-family: cosmic,sans-serif;
+    font-weight: lighter;
+}
+.testi .testi_container .item .item_content p{
+    padding: 10px;
+    color: black;
+    font-size: 75%;
+    font-family: cosmic,sans-serif;
+    margin-bottom: 10%;
+}
+.vd{
+    padding: 0% 3% 3% 3%;
+}
+.vd h2{
+    color: red;
+    font-size: 175%;
+    text-align: center;
+    padding: 2%;
+    text-transform: uppercase;
+}
+.vd .vd_container{
+    display: flex;
+}
+.vd .vd_container .vd_video{
+    width: 50%;
+    padding: 2%;
+}
+.vd .vd_container .vd_video iframe{
+    width: 100%;
+    box-shadow: 1px 1px 50px red;
+    outline: none;
+}
+.vd .vd_container .vd_content{
+    width: 40%;
+    padding: 2%;
+    margin-left: 5%;
+}
+.vd .vd_container .vd_content p{
+    padding: 1%;
+    color: white;
+    font-size: 75%;
+    font-family: cosmic,sans-serif;
+}
+.feed{
+    padding: 0% 3% 3% 3%;
+    background-image: url('image/Review.jpg');
+    background-size: cover;
+}
+.feed h2{
+    color: black;
+    font-weight: 700;
+    font-size: 175%;
+    text-align: center;
+    padding: 2%;
+    text-transform: uppercase;
+}
+.feed .feed_form{
+    text-align: center;
+}
+.feed .feed_form form{
+    padding: 2%;
+}
+.feed .feed_form form input{
+    width: 50%;
+    margin: 1%;
+    padding: 0.5% 1% 0.5% 1%;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+}
+.feed .feed_form form textarea{
+    width: 50%;
+    margin: 1%;
+    padding: 1% 1% 0.5% 1%;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+}
+.feed .feed_form form button{
+    width: 30%;
+    margin: 1%;
+    padding: 0.5%;
+    outline: none;
+    border: none;
+    background-color: #202020;
+    color: white;
+    border-radius: 25px;
+}
+.feed .feed_form form button:hover{
+    background-color: black;
+    color: red;
+    border: none;
+    border-bottom: 4px solid red;
+    transition: 0.5s;
+}
+.contact_container{
+    padding: 10%;
+}
+.contact_container h2{
+    color: orange;
+    font-size: 175%;
+    text-align: center;
+    padding: 2%;
+    font-family: cosmic, sans-serif;
+    text-transform: uppercase;
+}
+.contact_container .g_map{
+    width: 100%;
+    border: 10px solid red;
+}
+.contact_container .contact_content{
+    padding: 2%;
+}
+.contact_container .contact_content p{
+    color: white;
+    padding: 1%;
+    font-size: 65%;
+    text-align: center;
+    line-height: 25px;
+    font-family: cosmic,sans-serif;
+}
+.news{
+    padding-bottom: 3% 3% 3% 3%;
+}
+.news h2{
+    color: red;
+    font-weight: 700;
+    font-size: 175%;
+    text-align: center;
+    padding: 2%;
+}
+.news .news_container{
+    display: grid;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.news .news_container .news_heading h2{
+    color: Orange;
+    font-weight: 600;
+    font-size: 150%;
+    text-align: left;
+    padding: 2%;
+}
+.news .news_container .news_items{
+    display: flex;
+}
+.news .news_container .news_items .mnews,
+.news .news_container .news_items .cnews,
+.news .news_container .news_items .tvnews{
+    width: 30%;
+    margin: auto;
+    height: 500px;
+}
+.news .news_container .news_items .mnews .mnews_img,
+.news .news_container .news_items .cnews .cnews_img,
+.news .news_container .news_items .tvnews .tvnews_img{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+.news .news_container .news_items .mnews .mnews_img img,
+.news .news_container .news_items .cnews .cnews_img img,
+.news .news_container .news_items .tvnews .tvnews_img img{
+    width: 100%;
+    height: 100%;
+}
+.news .news_container .news_items .mnews .mnews_content,
+.news .news_container .news_items .cnews .cnews_content,
+.news .news_container .news_items .tvnews .tvnews_content{
+    text-align: left;
+}
+.news .news_container .news_items .mnews .mnews_content h3,
+.news .news_container .news_items .cnews .cnews_content h3,
+.news .news_container .news_items .tvnews .tvnews_content h3{
+    color: #202020;
+    padding: 1%;
+    font-size: 125%;
+    font-family: cosmic,sans-serif;
+    font-weight: lighter;
+}
+.news .news_container .news_items .mnews .mnews_content p,
+.news .news_container .news_items .cnews .cnews_content p,
+.news .news_container .news_items .tvnews .tvnews_content p{
+    color: white;
+    padding: 1%;
+    font-size: 68%;
+    font-family: cosmic,sans-serif;
+}
+.news .news_container .news_items .mnews .mnews_content a,
+.news .news_container .news_items .cnews .cnews_content a,
+.news .news_container .news_items .tvnews .tvnews_content a{
+    text-decoration: none;
+    margin: 5%;
+    padding: 2.5% 5%;
+    background-color: #202020;
+    color: white;
+    font-family: cosmic,sans-serif;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.news .news_container .news_items .mnews .mnews_content a:hover,
+.news .news_container .news_items .cnews .cnews_content a:hover,
+.news .news_container .news_items .tvnews .tvnews_content a:hover{
+    background-color: black;
+    color: red;
+    border: none;
+    border-bottom: 4px solid red;
+    transition: 0.5s;
+}
+.news .news_btn{
+    text-align: center;
+    margin-top: 3.5%;
+    margin-bottom: 3.5%;
+}
+.news .news_btn a{
+    text-decoration: none;
+    padding: 1% 2%;
+    background-color: #202020;
+    color: white;
+    font-family: cosmic,sans-serif;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.news .news_btn a:hover{
+    background-color: black;
+    color: red;
+    border: none;
+    border-bottom: 4px solid red;
+    transition: 0.5s;
+}
+footer{
+    background-color: #202020;
+    padding: 1% 3% 3% 3%;
+}
+footer .pages{
+    text-align: center;
+}
+footer .pages h3{
+    color: black;
+    font-size: 100%;
+    font-family: cosmic, sans-serif;
+    padding: 0.5%;
+}
+footer .pages a{
+    text-decoration: none;
+    margin: 1%;
+    color: white;
+    font-size: 75%;
+    font-family: cosmic, sans-serif;
+}
+footer .pages a:hover{
+    color: red;
+}
+footer .doc{
+    text-align: center;
+}
+footer .doc h3{
+    color: black;
+    font-size: 100%;
+    font-family: cosmic, sans-serif;
+    padding: 0.5%;
+}
+footer .doc a{
+    text-decoration: none;
+    margin: 1%;
+    color: white;
+    font-size: 75%;
+    font-family: cosmic, sans-serif;
+}
+footer .doc a:hover{
+    color: red;
+}
+footer .social{
+    text-align: center;
+}
+footer .social h3{
+    color: black;
+    font-size: 100%;
+    font-family: cosmic, sans-serif;
+    padding: 0.5%;
+}
+footer .social a{
+    text-decoration: none;
+    font-size: 150%;
+    color: white;
+    margin: 1%;
+}
+footer .social .fb:hover{
+    color: #3b5998;
+}
+footer .social .twitter:hover{
+    color: #1DA1F2;
+}
+footer .social .insta:hover{
+    color: #8a3ab9;
+}
+footer .social .tumblr:hover{
+    color: #34526f;
+}
+footer .social .youtube:hover{
+    color: #FF0000;
+}
+footer .social .snapchat:hover{
+    color: #FEFC00;
+}
+footer .social .pinterest:hover{
+    color: #E60023;
+}
+footer .contact{
+    text-align: center;
+}
+footer .contact h3{
+    color: black;
+    font-size: 100%;
+    font-family: cosmic, sans-serif;
+    padding: 0.5%;
+}
+footer .contact a{
+    text-decoration: none;
+    font-size: 150%;
+    color: white;
+    margin: 1%;
+}
+footer .contact .whatsapp:hover{
+    color: #19aa3d;
+}
+footer .contact .call:hover{
+    color: #2da2e1;
+}
+footer .contact .mail:hover{
+    color: #D44638;
+}
+.copyright{
+    color: black;
+    font-weight: 900;
+    text-align: center;
+}
+
+/*-------------------------------------*/
+/*----- Media Queries -----*/
+/*-------------------------------------*/
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    
+}
+
+/* Extra large devices (large desktops)
+No media query since the extra-large breakpoint has no upper bound on its width */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    *{
+        font-size: 15px;
+    }
+    .nav{
+        display: grid;
+    }
+    .logo{
+        margin-left: 27.5%;
+        margin-right: 10%;
+    }
+    .nav_side{
+        width: 95%;
+        margin-left: 5%;
+        margin-right: 2.5%;
+        margin-bottom: 2.5%;
+    }
+    .main .main_content{
+        padding-top: 25%;
+    }
+    .product .product_container,
+    .news .news_container .news_items{
+        display: grid;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .product .product_container .item,
+    .news .news_container .news_items .mnews,
+    .news .news_container .news_items .cnews,
+    .news .news_container .news_items .tvnews{
+        width: 80%;
+        margin: 5%;
+        height: 400px;
+    }
+    .product .product_container .item .item_content p,
+    .news .news_container .news_items .mnews .mnews_content p,
+    .news .news_container .news_items .cnews .cnews_content p,
+    .news .news_container .news_items .tvnews .tvnews_content p{
+        font-size: 75%;
+    }
+    .product .product_btn,
+    .news .news_btn{
+        margin-top: 7.5%;
+        margin-bottom: 7.5%;
+    }
+    .product .product_btn a,
+    .news .news_btn a{
+        padding: 2% 4%;
+    }
+    .keypoint .key_container{
+        display: grid;
+    }
+    .keypoint .key_container .key_img{
+        width: 100%;
+    }
+    .keypoint .key_container .key_content{
+        width: 100%;
+    }
+    .vd .vd_container{
+        display: grid;
+    }
+    .vd .vd_container .vd_video{
+        width: 100%;
+    }
+    .vd .vd_container .vd_content{
+        width: 100%;
+        margin: auto;
+    }
+    .feed .feed_form form input{
+        padding: 0.5% 1% 0.5% 2.5%;
+        width: 80%;
+    }
+    .feed .feed_form form textarea{
+        padding: 1.5% 1% 0.5% 2.5%;
+        width: 80%;
+    }
+    .feed .feed_form form button{
+        width: 50%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    *{
+        font-size: 17px;
+    }
+    .nav_side{
+        width: 60%;
+        margin-top: 2.5%;
+    }
+    .product .product_container,
+    .news .news_container .news_items{
+        display: grid;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .product .product_container .item,
+    .news .news_container .news_items .mnews,
+    .news .news_container .news_items .cnews,
+    .news .news_container .news_items .tvnews{
+        width: 80%;
+        margin: 5%;
+        height: 400px;
+    }
+    .product .product_container .item .item_content p,
+    .news .news_container .news_items .mnews .mnews_content p,
+    .news .news_container .news_items .cnews .cnews_content p,
+    .news .news_container .news_items .tvnews .tvnews_content p{
+        font-size: 75%;
+    }
+    .product .product_btn,
+    .news .news_btn{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .product .product_btn a,
+    .news .news_btn a{
+        padding: 1.5% 3%;
+    }
+    .keypoint .key_container{
+        display: grid;
+    }
+    .keypoint .key_container .key_img{
+        width: 100%;
+    }
+    .keypoint .key_container .key_content{
+        width: 100%;
+    }
+    .vd .vd_container{
+        display: grid;
+    }
+    .vd .vd_container .vd_video{
+        width: 100%;
+    }
+    .vd .vd_container .vd_content{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    *{
+        font-size: 17px;
+    }
+    .nav_side{
+        width: 60%;
+        margin-top: 2.5%;
+    }
+    .product .product_container,
+    .news .news_container .news_items{
+        display: grid;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .product .product_container .item,
+    .news .news_container .news_items .mnews,
+    .news .news_container .news_items .cnews,
+    .news .news_container .news_items .tvnews{
+        width: 80%;
+        margin: 5%;
+        height: 400px;
+    }
+    .product .product_container .item .item_content p,
+    .news .news_container .news_items .mnews .mnews_content p,
+    .news .news_container .news_items .cnews .cnews_content p,
+    .news .news_container .news_items .tvnews .tvnews_content p{
+        font-size: 75%;
+    }
+    .product .product_btn,
+    .news .news_btn{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .product .product_btn a,
+    .news .news_btn a{
+        padding: 1.5% 3%;
+    }
+    .keypoint .key_container{
+        display: grid;
+    }
+    .keypoint .key_container .key_img{
+        width: 100%;
+    }
+    .keypoint .key_container .key_content{
+        width: 100%;
+    }
+    .vd .vd_container{
+        display: grid;
+    }
+    .vd .vd_container .vd_video{
+        width: 100%;
+    }
+    .vd .vd_container .vd_content{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    *{
+        font-size: 18px;
+    }
+    .nav_side{
+        width: 50%;
+    }
+    .product .product_container .item,
+    .news .news_container .news_items .mnews,
+    .news .news_container .news_items .cnews,
+    .news .news_container .news_items .tvnews{
+        width: 32%;
+        margin: 1.5%;
+        height: 450px;
+    }
+    .product .product_container .item .item_content p,
+    .news .news_container .news_items .mnews .mnews_content p,
+    .news .news_container .news_items .cnews .cnews_content p,
+    .news .news_container .news_items .tvnews .tvnews_content p{
+        font-size: 62.5%;
+    }
+    .keypoint .key_container .key_img{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+}
